@@ -1,5 +1,5 @@
 # Predicting Loan Default
-## Stage: Problem Framing & Scoping
+## Problem Framing & Scoping
 
 ### Problem Statement
 Financial institutions like banks and other lending organizations face significant risk by lending to borrowers who default on their loans, leading to revenue loss. Predicting loan default in advance can allow organizations to minimize these losses. A well-performing model can detect these risky applicants, thus guiding lenders.
@@ -30,8 +30,15 @@ These predictions will be a part of the decision-making workflow, and must be av
 - Potential bias
 
 ### Lifecycle Mapping
-Goal → Stage → Deliverable
-- Reduce loan default risk → Problem Framing & Scoping (Stage 01) → Requirements and challenges
+- Reduce loan default risk → Problem Framing & Scoping → Requirements and challenges
+- Assess data → Data Collection and Storage → Dataset & information about it
+- Improve data quality → Preprocessing by handling outliers and missing values → Clean dataset
+- Identify patterns → Exploratory Data Analysis (EDA) → Visualizations & hypotheses
+- Prepare features for models → Feature engineering → Dataset with new features
+- Modelling-ready dataset → Preprocessing by scaling and encoding features → Transformed dataset
+- Train predictive models → Modeling → Trained classifiers
+- Select best model → Model Evaluation & Validation → Performance comparison report
+- Operationalize predictions → API Deployment → Deployed model pipeline
 
 ### Repo plan
 - `/data/` → Raw and processed datasets
@@ -42,7 +49,7 @@ Goal → Stage → Deliverable
 - `/docs/` → Project documentation: repo usage, model design, assumptions
     + should be updated appropriately as changes are made
 
-## Stage: Data Storage
+## Data Storage
 - project/  
     + data/
         - raw
