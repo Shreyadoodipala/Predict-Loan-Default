@@ -1,0 +1,13 @@
+# 2. Explaoratory Data Analysis Observations
+- This is a highly imbalanced dataset, with only ~16% default.
+- There are 7 different loan purposes, with 'debt consolidation' being the most common one at 41.3%.
+- Borrowers who did not meet the credit underwriting policy defaulted on loans more than those who met the criteria,
+- Loans taken out for small businesses were most likely to be defaulted on.
+- Loans that got defaulted had slightly higher interest rates than loans that weren't defaulted.
+- People who had defaulted on a loan had significanlty lower FICO scores.
+- People who defaulted on a loan had a higher revolve utilized.
+- FICO and interest rate have a very strong negative correlation.
+- FICO and revolve utilized have a strong negative correlation.
+- Interest rate and revolve utilized have a moderate positive correlation.
+- Installment and log annual income have a moderate positive correlation.
+- None of the features are strongly correlated to default.
