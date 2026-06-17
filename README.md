@@ -58,3 +58,41 @@ These predictions will be a part of the decision-making workflow, and must be av
 `data/raw` contains the raw and unchanged data.  
 `data/processed` contains the data files which are changed by preprocessing, feature engineering etc.
 
+---
+
+## Deployment
+
+### Flask API for Predictions
+A REST API built with Flask that enables real-time predictions on loan applications. The API automatically handles data preprocessing and returns default probability scores.
+
+**API will be available at:** `http://localhost:5000`
+
+### API Endpoints
+
+#### 1. Health Check
+```
+GET /health
+```
+Check if API and models are ready.
+
+#### 2. Single Prediction
+```
+POST /predict
+```
+Make a prediction on one loan application.
+
+#### 3. Batch Predictions
+```
+POST /predict-batch
+```
+Make predictions on multiple loan applications.
+
+## API Features
+
+- Automatic data preprocessing
+- Feature engineering (income ratios)
+- Input validation
+- Single and batch predictions
+- Comprehensive error handling
+- Health checks
+
